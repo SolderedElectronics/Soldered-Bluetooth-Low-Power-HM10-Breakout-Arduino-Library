@@ -5,13 +5,18 @@
 ##################################################
 # Datatypes (KEYWORD1)
 ##################################################
-
+BLE
 ##################################################
 # Methods and Functions (KEYWORD2)
 ##################################################
 
-begin	KEYWORD2
-
+begin	        KEYWORD2
+available       KEYWORD2
+print           KEYWORD2
+println         KEYWORD2
+readString      KEYWORD2
+print           KEYWORD2
+println         KEYWORD2
 ##################################################
 # Constants (LITERAL1)
 ##################################################
