@@ -18,11 +18,11 @@
 class BLE : public SoftwareSerial
 {
   public:
-    SoftwareSerial::SoftwareSerial;
+    using SoftwareSerial::SoftwareSerial;
   protected:
 
+  protected:
   private:
-
 };
 
 #endif
