@@ -19,8 +19,8 @@ class BLE : public SoftwareSerial
 {
   public:
     using SoftwareSerial::SoftwareSerial;
-  protected:
 
+  protected:
   protected:
   private:
 };
