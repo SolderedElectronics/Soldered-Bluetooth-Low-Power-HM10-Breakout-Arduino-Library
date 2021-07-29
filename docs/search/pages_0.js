@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['naziv_20proizvoda_20arduino_20library_41',['NAZIV PROIZVODA Arduino library',['../index.html',1,'']]]
+  ['bluetooth_20low_20energy_20_28ble_29_20arduino_20library_38',['BlueTooth Low Energy (BLE) Arduino library',['../index.html',1,'']]]
 ];
