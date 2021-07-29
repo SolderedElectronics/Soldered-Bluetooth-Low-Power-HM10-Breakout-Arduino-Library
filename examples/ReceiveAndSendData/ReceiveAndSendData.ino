@@ -13,8 +13,8 @@
 #include "BLE-SOLDERED.h"
 
 //Define pins as transmitter and receiver, must be same as pins that module is connected to Soldered Microcontroller
-const int BT_RX = 10;
-const int BT_TX = 11;
+int BT_RX = 2;
+int BT_TX = 3;
 
 BLE bt(BT_RX, BT_TX);
 
