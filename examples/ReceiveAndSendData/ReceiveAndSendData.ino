@@ -21,7 +21,7 @@ BLE bt(BT_RX, BT_TX);
 String msg;
 
 // LED initialisation
-const int LED = 13;
+int LED = USER_LED;
 
 void setup() {
   bt.begin(9600);
