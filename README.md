@@ -5,7 +5,7 @@
 
 | ![BlueTooth Low Energy](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [BlueTooth Low Energy](https://www.solde.red/333070)                                                            |
+| [BlueTooth Low Energy](https://www.solde.red/101685)                                                            |
 
 BlueTooth Low Energy [easyC ecosystem](https://www.soldered.com/easyC). 
 
