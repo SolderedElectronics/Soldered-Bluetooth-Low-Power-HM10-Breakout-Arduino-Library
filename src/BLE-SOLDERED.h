@@ -13,7 +13,24 @@
 #define _BLE_H
 
 #include "Arduino.h"
+
+#ifdef ARDUINO_ESP32_DEV
+
+class BLE : public HardwareSerial
+{
+public:
+  using HardwareSerial::HardwareSerial;
+
+  protected:
+  private:
+};
+
+
+#else
+
 #include "SoftwareSerial.h"
+
+
 
 class BLE : public SoftwareSerial
 {
@@ -24,4 +41,6 @@ class BLE : public SoftwareSerial
   private:
 };
 
-#endif
+#endif //#ifdef ARDUINO_ESP32_dEV
+
+#endif //

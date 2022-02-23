@@ -17,20 +17,22 @@
 // must be same as pins that module is connected to Soldered Microcontroller
 int BT_RX = 2;  //This library is based on SoftwareSerial library,
 int BT_TX = 3;  //so refer to documentation of that library for more details
-
-BLE bt(BT_RX, BT_TX); //Create instance of class and specify pins for UART 
-                      //communication with BLE module
+int baudrate = 9600;
 
 String msg;
 
 // LED initialisation
 #define LED 9
 
+BLE bt(1); //Create instance of class for UART 
+           //communication with BLE module
 void setup()
 {
-    bt.begin(9600);  //Start serial communication with BLE module using 9600 bauds/s
-    bt.println("Bt is on");
-    pinMode(LED, OUTPUT);  //Set pin LED to OUTPUT mode,
+  bt.begin(baudrate, SERIAL_8N1, BT_RX, BT_TX);  // Start serial communication with BLE module using 9600 bauds/s
+                                                 // and specify RX pin, TX pin and protocol Serial_8N1 
+                                                    
+  bt.println("Bt is on");
+  pinMode(LED, OUTPUT);  //Set pin LED to OUTPUT mode,
                            //so LED can be turned on and off
 } 
 // Wait for message
