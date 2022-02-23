@@ -41,7 +41,6 @@ public:
 #include "SoftwareSerial.h"
 
 
-
 class BLE : public SoftwareSerial
 {
   public:
