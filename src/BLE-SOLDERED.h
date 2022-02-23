@@ -18,8 +18,8 @@
 
 class BLE : public HardwareSerial
 {
-public:
-  using HardwareSerial::HardwareSerial;
+  public:
+    using HardwareSerial::HardwareSerial;
 
   protected:
   private:
@@ -29,7 +29,6 @@ public:
 #else
 
 #include "SoftwareSerial.h"
-
 
 
 class BLE : public SoftwareSerial
