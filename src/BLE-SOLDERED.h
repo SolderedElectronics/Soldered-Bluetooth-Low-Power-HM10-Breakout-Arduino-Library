@@ -18,21 +18,21 @@
 
 class BLE : public HardwareSerial
 {
-public:
-  BLE(int _rx , int _tx) : HardwareSerial(1)
-  {
-    rx = _rx;
-    tx = _tx;
-  }
+  public:
+    BLE(int _rx, int _tx) : HardwareSerial(1)
+    {
+        rx = _rx;
+        tx = _tx;
+    }
 
-  void begin(int _baudrate)
-  {
-    HardwareSerial::begin( _baudrate, SERIAL_8N1, rx, tx, false, 20000UL);
-  }
+    void begin(int _baudrate)
+    {
+        HardwareSerial::begin(_baudrate, SERIAL_8N1, rx, tx, false, 20000UL);
+    }
 
   protected:
   private:
-  int rx, tx;
+    int rx, tx;
 };
 
 
@@ -45,6 +45,7 @@ class BLE : public SoftwareSerial
 {
   public:
     using SoftwareSerial::SoftwareSerial;
+
   protected:
   private:
 };
